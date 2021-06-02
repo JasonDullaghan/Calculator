@@ -21,10 +21,10 @@ function operate(a, b, operand) {
 
   if (operand === "x") return multiply(a, b);
 
-  if (operand === "/") 
-    if (b === 0){
-      alert("are you retarded?")
-        return "retard";
+  if (operand === "/")
+    if (b === 0) {
+      alert("r u dum?");
+      return "dummy";
     }
   return divide(a, b);
 }
@@ -49,19 +49,14 @@ document.getElementById("equals").onclick = function () {
   //console.log(firstNumber)
   if (operator === 7) {
     document.getElementById("screen").innerHTML = "tf r u doing";
-  }
-
-  else {
-  result = operate(firstNumber, secondNumber, operator);
-  document.getElementById("screen").innerHTML = result;
-  firstNumber = result;
-  secondNumber = "h";
-  operator = 7;
+  } else {
+    result = operate(firstNumber, secondNumber, operator);
+    document.getElementById("screen").innerHTML = result;
+    firstNumber = result;
+    secondNumber = "h";
+    operator = 7;
   }
 };
-
-
-
 
 document.getElementById("one").onclick = function () {
   console.log(operator);
@@ -318,9 +313,7 @@ document.getElementById("AC").onclick = function () {
 };
 
 document.getElementById("add").onclick = function () {
-  if (operator !== 7){
-    
-
+  if (operator !== 7) {
     result = 0;
     firstNumber = parseInt(firstNumber);
     secondNumber = parseInt(secondNumber);
@@ -332,23 +325,14 @@ document.getElementById("add").onclick = function () {
     document.getElementById("screen").innerHTML = result;
     firstNumber = result;
     secondNumber = "h";
-    
-
-
-  }
-
-  else {
-
-  
-  operator = "+";
-  document.getElementById("screen").innerHTML = operator;
+  } else {
+    operator = "+";
+    document.getElementById("screen").innerHTML = operator;
   }
 };
 
 document.getElementById("subtract").onclick = function () {
-  if (operator !== 7){
-    
-
+  if (operator !== 7) {
     result = 0;
     firstNumber = parseInt(firstNumber);
     secondNumber = parseInt(secondNumber);
@@ -360,23 +344,14 @@ document.getElementById("subtract").onclick = function () {
     document.getElementById("screen").innerHTML = result;
     firstNumber = result;
     secondNumber = "h";
-    
-
-
-  }
-
-  else {
-
-  operator = "-";
-  document.getElementById("screen").innerHTML = operator;
-
+  } else {
+    operator = "-";
+    document.getElementById("screen").innerHTML = operator;
   }
 };
 
 document.getElementById("multiply").onclick = function () {
-  if (operator !== 7){
-    
-
+  if (operator !== 7) {
     result = 0;
     firstNumber = parseInt(firstNumber);
     secondNumber = parseInt(secondNumber);
@@ -388,50 +363,27 @@ document.getElementById("multiply").onclick = function () {
     document.getElementById("screen").innerHTML = result;
     firstNumber = result;
     secondNumber = "h";
-    
-
-
+  } else {
+    operator = "x";
+    document.getElementById("screen").innerHTML = operator;
   }
-
-  else {
-
-  
-  operator = "x";
-  document.getElementById("screen").innerHTML = operator;
-  }
-
 };
 
 document.getElementById("divide").onclick = function () {
-  if (operator !== 7){
-    
-    
+  if (operator !== 7) {
     result = 0;
     firstNumber = parseInt(firstNumber);
     secondNumber = parseInt(secondNumber);
-    result = parseInt(result)
- 
+    result = parseInt(result);
+
     result = operate(firstNumber, secondNumber, operator);
 
-  result = operate(firstNumber, secondNumber, operator);
+    result = operate(firstNumber, secondNumber, operator);
     document.getElementById("screen").innerHTML = result;
     firstNumber = result;
     secondNumber = "h";
+  } else {
+    operator = "/";
+    document.getElementById("screen").innerHTML = operator;
   }
-
-  else {
-
- 
-    
-      
-  operator = "/";
-  document.getElementById("screen").innerHTML = operator;
-  }
-  
 };
-
-
-
-
-
-
