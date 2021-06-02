@@ -109,7 +109,7 @@ body {
 #add:hover,
 #equals:hover {
   color: rgba(0, 0, 0, 0.801);
-  background-color: #00e304a2;
+  background-color: #19751b73;
 }
 
 button {
@@ -136,10 +136,9 @@ background-color: #ff8d00;
 #divide:hover,
 #multiply:hover,
 #subtract:hover,
-#zero:hover,
 #AC:hover,
 #add:hover,
 #equals:hover {
   color: rgba(0, 0, 0, 0.801);
-  background-color: #ff8c00b2;
+  background-color: #dd800fb2;
 }
